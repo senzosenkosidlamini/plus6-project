@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basicsproject</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #3d2e27 0%, #aa8771 100%);
+        color: #fff;
+        font-family: verdana sans-serif;
+        width: 80%;
+        margin: 60px auto;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 80px;
+        line-height: 1.5;
+        margin: 0;
+        text-align: center;
+        padding: 20px 30px 20px 30px;
+        color: #c79767;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        border: 6px;
+        border-style: double;
+        border-color: #aa8771;
+        color: #ae8a72;
+        padding: 24px 24px 24px 24px;
+      }
+
+      img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+
+      p {
+        font-size: 25px;
+        line-height: 1, 5;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      a {
+        display: block;
+        font-family: cursive;
+        font-size: 40px;
+        text-decoration: solid;
+        text-align: center;
+        color: #3d2e27;
+      }
+      button {
+        border-radius: 35%;
+        margin: 0 auto;
+        display: block;
+        background-color: #403129;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 15px 8px 8px #403129;
+      }
+      button:hover {
+        color: #fff;
+        background: #8c6434;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <div class="apparell">
+        <div>SOS</div>
+        COUTURE
+      </div>
+    </h1>
+    <h2>
+      <em> QUENNING QUEENS </em>
+    </h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/064/original/senzoproject.jpg?1706692345"
+    />
+    <hr />
+
+    <p>
+      SOS COUTURE prides itself in empowering women of all sizes , shapes and
+      ages in Africa and beyond. We blend various styles and influences around
+      the globe to make you feel and look exquisite.
+      <span class="crown"> QUENNING</span> right within your budget!! We offer
+      custom making services as well as hiring services.
+      <br />
+      <strong> Stay <span class="crown">QUENNING </span> with us!!! </strong>
+    </p>
+
+    <hr />
+
+    <a href="mailto:senzosenkosimoyo@gmail.com"> EMAIL</a>
+
+    <br />
+
+    <button>Queen with us</button>
+
+    <script>
+      function queenWith() {
+        let customMake = prompt("Do you want to custom make a gown?");
+
+        customMake = customMake.toLowerCase();
+        customMake = customMake.trim();
+
+        if (customMake === "yes") {
+          alert("Welcome queen! Own it!");
+        } else {
+          alert("Welcome queen! Work it!");
+        }
+      }
+
+      let queenButton = document.querySelector("button");
+      queenButton.addEventListener("click", queenWith);
+    </script>
+  </body>
+</html>
